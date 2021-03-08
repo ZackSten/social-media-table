@@ -49,6 +49,7 @@ h1 {
 /* top card */
 .top-cards {
     margin-top: -50px;
+    margin-bottom: 3em;
 }
 
 /* card */
@@ -137,6 +138,7 @@ h1 {
 
 /* overview */
 .overview {
+    padding-bottom: 2em;
 }
 
 h2 {
@@ -194,3 +196,32 @@ h2 {
 .card-small-percentage img {
     margin-right: 5px;
 }
+
+@media screen and (min-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+
+    .wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
+}
+
+
+
